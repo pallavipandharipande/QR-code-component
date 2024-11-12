@@ -2,5 +2,5 @@
 <br>
 Developer: Pallavi Pandharipande
 <br>
-Link to the project: pallavipandharipande/QR-code-component/
+Link to the project: pallavipandharipande.github.io/QR-code-component/
 QR code component
