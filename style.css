@@ -105,6 +105,7 @@ main {
 
 /* The footer of the webpage styled. Used clamp() function to make text reponsive to screen size */
 footer {
+    font-family: CormorantInfant-Regular;
     font-size: 0.7rem;
     font-size: clamp(0.7rem, 0.5857142857142856rem + 0.5714285714285714vw, 1.5rem);
     text-align: center;
