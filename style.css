@@ -1,13 +1,110 @@
+/* Initially margin and padding set to 0 for all elements */
 * {
     margin: 0;
     padding: 0;
 }
 
-body {
-    height: 100vh;
-    width: 100vw;
+/* Font used for header */
+@font-face {
+    font-family: Delius-Regular;
+    src:url("Delius-Regular.ttf")
 }
 
-.container {
+/* The header of the webpage styled. Used clamp() function to make text reponsive to screen size */
+header {
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.4285714285714286rem + 2.857142857142857vw, 5rem);
+    color: rgb(239, 5, 169);
+    font-family: Delius-Regular;
+    text-align: center;
+    background-color: hsl(212, 45%, 89%);
+}
 
+/* The background of the webpage styled */
+main {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(212, 45%, 89%);
+}
+
+
+/* Made use of media queries to make the webpage responsive */
+/* For mobile phone small size 320px */
+@media (max-width: 20em) {
+    .cards {
+        height: 25rem;
+        width: 18rem;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 25px;
+    }
+}
+/* For mobile phone medium size 375px */
+@media (min-width: 21em) {
+    .cards {
+        height: 28rem;
+        width: 21rem;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 25px;
+    }
+}
+/* For mobile phone large size 425px */
+@media (min-width: 26.56em) {
+    .cards {
+        height: 31rem;
+        width: 24rem;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 25px;
+    }
+}
+/* For tablets 768px */
+@media (min-width: 48em) {
+    .cards {
+        height: 31rem;
+        width: 24rem;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 25px;
+    }
+}
+/* For laptops small size 1024px */
+@media (min-width: 64em) {
+    .cards {
+        height: 28rem;
+        width: 18rem;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 25px;
+    }
+}
+/* For laptops large size 1440px */
+@media (min-width: 90em) {
+    .cards {
+        height: 31rem;
+        width: 21rem;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 25px;
+    }
+}
+/* For desktop 2560px */
+@media (min-width: 160em) {
+    .cards {
+        height: 55rem;
+        width: 40rem;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 25px;
+    }
+}
+
+/* Font used for footer */
+@font-face {
+    font-family: CormorantInfant-Regular;
+    src:url("CormorantInfant-Regular.ttf")
+}
+
+/* The footer of the webpage styled. Used clamp() function to make text reponsive to screen size */
+footer {
+    font-size: 0.5rem;
+    text-align: center;
 }
