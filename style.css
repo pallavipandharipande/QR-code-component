@@ -4,6 +4,17 @@
     padding: 0;
 }
 
+/* The background of the webpage styled */
+main {
+    height: 94vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(212, 45%, 89%);
+}
+
 /* Font used for header */
 @font-face {
     font-family: Delius-Regular;
@@ -21,50 +32,96 @@ header {
     background-color: hsl(212, 45%, 89%);
 }
 
-/* The background of the webpage styled */
-main {
-    height: 94vh;
-    width: 100vw;
+.cards {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background-color: hsl(212, 45%, 89%);
 }
 
+.qrCode {
+    margin-top: 1.2rem;
+}
+
+.description1 {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.description2 {
+    margin-top: 1rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+}
 
 /* Made use of media queries to make the webpage responsive */
 /* For mobile phone small size 320px */
 @media (max-width: 20em) {
     .cards {
-        height: 25rem;
+        height: 28rem;
         width: 18rem;
         background-color: hsl(0, 0%, 100%);
         border-radius: 25px;
     }
+
+    .description1 {
+        margin-top: 1.2rem;
+        font-size: 1.2rem;
+    }
+
+    .description2 {
+        margin-top: 1.2rem;
+        font-size: 1rem;
+    }
+
 }
 /* For mobile phone medium size 375px */
 @media (min-width: 21em) {
     .cards {
-        height: 28rem;
+        height: 32rem;
         width: 21rem;
         background-color: hsl(0, 0%, 100%);
         border-radius: 25px;
     }
+
+    .description1 {
+        margin-top: 1.2rem;
+        font-size: 1.5rem;
+    }
+
+    .description2 {
+        margin-top: 1rem;
+        font-size: 1.1rem;
+    }
+
 }
 /* For mobile phone large size 425px */
 @media (min-width: 26.56em) {
     .cards {
-        height: 31rem;
+        height: 36rem;
         width: 24rem;
         background-color: hsl(0, 0%, 100%);
         border-radius: 25px;
     }
+
+    .description1 {
+        margin-top: 1.2rem;
+        font-size: 1.5rem;
+    }
+
+    .description2 {
+        margin-top: 1rem;
+        font-size: 1.3rem;
+    }
+
 }
 /* For tablets 768px */
 @media (min-width: 48em) {
     .cards {
-        height: 31rem;
+        height: 36rem;
         width: 24rem;
         background-color: hsl(0, 0%, 100%);
         border-radius: 25px;
@@ -74,6 +131,16 @@ main {
     }
     main {
         height: 91.5vh;
+    }
+
+    .description1 {
+        margin-top: 1.2rem;
+        font-size: 1.5rem;
+    }
+
+    .description2 {
+        margin-top: 1rem;
+        font-size: 1.3rem;
     }
 }
 /* For laptops small size 1024px */
@@ -93,6 +160,16 @@ main {
     footer {
         height: 3vh;
     }
+
+    .description1 {
+        margin-top: 1.2rem;
+        font-size: 1.3rem;
+    }
+
+    .description2 {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
 }
 /* For laptops large size 1440px */
 @media (min-width: 90em) {
@@ -111,12 +188,22 @@ main {
     footer {
         height: 3vh;
     }
+
+    .description1 {
+        margin-top: 1.2rem;
+        font-size: 1.4rem;
+    }
+
+    .description2 {
+        margin-top: 1rem;
+        font-size: 1.1rem;
+    }
 }
 /* For desktop 2560px */
 @media (min-width: 160em) {
     .cards {
-        height: 55rem;
-        width: 40rem;
+        height: 75rem;
+        width: 50rem;
         background-color: hsl(0, 0%, 100%);
         border-radius: 25px;
     }
@@ -128,6 +215,24 @@ main {
     }
     footer {
         height: 3vh;
+    }
+
+    .qrCode {
+        margin-top: 3rem;
+    }
+
+    .description1 {
+        margin-top: 3.2rem;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+        font-size: 3rem;
+    }
+
+    .description2 {
+        margin-top: 2.5rem;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+        font-size: 2.7rem;
     }
 }
 
